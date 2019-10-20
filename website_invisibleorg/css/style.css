@@ -52,6 +52,26 @@ h6 {
 
 /* Utilities */
 
+.underline {
+  text-decoration: underline;
+}
+
+.l-fontsize {
+  font-size: 3rem;
+}
+
+.m-fontsize {
+  font-size: 1.25rem;
+}
+
+.s-fontsize {
+  font-size: 0.8rem;
+}
+
+.italics {
+  font-style: italic;
+}
+
 p {
   margin: 0.5rem 0;
 }
@@ -66,8 +86,16 @@ p {
   color: var(--primary-color) !important;
 }
 
+.p-bottom {
+  padding-bottom: 2rem;
+}
+
+.py-small {
+  padding-top: 1rem;
+}
+
 .py-1 {
-  padding: 1.5rem 0;
+  padding-top: 1.5rem;
 }
 
 .py-2 {
@@ -75,7 +103,7 @@ p {
 }
 
 .py-3 {
-  padding: 2.5rem 0;
+  padding-top: 2.5rem;
 }
 
 .p-1 {
@@ -315,10 +343,72 @@ i.far.fa-envelope.fa-2x:hover {
   margin-bottom: 0.5rem;
 }
 
+.center-text {
+  text-align: center;
+}
+
 .center {
   margin: auto;
 }
 
 .left {
   margin-left: 5rem;
+}
+
+.img {
+  height: 65%;
+  width: 65%;
+  margin-left: 10rem;
+}
+
+.field {
+  display: grid;
+  grid-template-areas:
+    "name email"
+    "message message";
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.field .name-input {
+  grid-area: name;
+}
+.field .subject-input {
+  grid-area: subject;
+}
+.field .email-input {
+  grid-area: email;
+}
+.field .phone-input {
+  grid-area: phone;
+}
+.field .message-input {
+  grid-area: message;
+  height: 150px;
+}
+.field .text-input {
+  padding: 0.5rem 1rem;
+}
+
+.btn-dark {
+  display: inline-block;
+  margin: 1rem;
+  margin-left: 31rem;
+  border-radius: 5px;
+  padding: 0.8rem 2rem;
+  transition: all 0.25s;
+  border: none;
+  cursor: pointer;
+  color: #f4f4f4;
+  background-color: #333;
+}
+
+.btn-dark:hover {
+  background: #fff;
+  color: #333;
+}
+
+.coming-soon {
+  text-align: center;
+  margin: 6rem;
 }
